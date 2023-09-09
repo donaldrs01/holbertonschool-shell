@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod ugo+rx ./permissions
+chmod 711 {} ./permissions
