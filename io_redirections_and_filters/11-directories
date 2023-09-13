@@ -1,2 +1,2 @@
 #!/bin/bash
-find /root/holbertonschool-shell/io_redirections_and_filters -type d | wc
+find . -mindepth 1 -type d | wc
