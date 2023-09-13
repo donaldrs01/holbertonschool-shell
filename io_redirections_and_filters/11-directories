@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d | wc
+find /root/holbertonschool-shell/io_redirections_and_filters -type d | wc
