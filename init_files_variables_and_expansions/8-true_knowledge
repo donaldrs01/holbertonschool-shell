@@ -1,0 +1,2 @@
+#!/bin/bash
+let b=128 + $TRUEKNOWLEDGE 
