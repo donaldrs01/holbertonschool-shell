@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "hello $(whoami)" 
+current_user=$(whoami); echo "hello $current_user" 
