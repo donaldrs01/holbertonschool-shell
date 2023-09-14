@@ -1,2 +1,2 @@
 #!/bin/bash
-let b=128 + TRUEKNOWLEDGE 
+echo $($TRUEKNOWLEDGE + 128)
