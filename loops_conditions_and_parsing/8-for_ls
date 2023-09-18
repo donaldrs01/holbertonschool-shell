@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # This script will list contents of current directory, using a for loop, but only show part of the name.
-for file in $(ls -A); do
+for file in *; do
 	if [ -f "$file" ]; then
 		cut_name=$(echo "$file" | cut -d'-' -f2-) 
 		echo "$cut_name"
