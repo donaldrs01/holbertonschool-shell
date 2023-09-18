@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This will use a 'while' loop that will do something specific on the 9th iteration. 
+i=1
+while [ $i -le 10 ] 
+do 
+	echo "Best School"
+	((vi++)) 
+	if [ $i -eq 9 ]; then
+		echo "Best School"
+	
+done
