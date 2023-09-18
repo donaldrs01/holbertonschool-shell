@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This will use an until loop to display 10 items. It is important to remember that until loops will run until the statement is false.
+i=1
+until [ $i -gt 10 ]
+do
+	echo "Best School" 
+	i=$((i+1))
+done
