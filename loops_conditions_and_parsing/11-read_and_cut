@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# This script will only display certain parts of /etc/passwd.
+passwd_file=/etc/passwd
+
+while IFS=: read -r line; do
+	username=$(echo "$line" | cut -d: -f1)
+	userid=$(echo "$line" | cut -d: -f3)
+	home=$(echo "$line" | cut -d: -f6) 
+
+	echo "$username"
+	echo "$userid" 
+	echo "$home"
+done < $passwd_file
