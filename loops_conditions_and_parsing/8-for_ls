@@ -2,6 +2,7 @@
 # This script will list contents of current directory, using a for loop, but only show part of the name.
 for file in $(ls -A); do
 	if [ -f "$file" ]; then
-		echo "$file"
+		cut_name=$(echo "$file" | cut -d'-' -f2-) 
+		echo "$cut_name"
 	fi
 done
