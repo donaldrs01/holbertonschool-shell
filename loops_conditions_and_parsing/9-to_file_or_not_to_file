@@ -2,7 +2,8 @@
 # Uses if/else to check 'school' file for various information
 file=school
 
-if [ -e "$file" ]; then 
+if [ -e "$file" ]; then
+       echo "school file exists"	
 
 	if [ -s "$file" ]; then
 		echo "school file is not empty" 
@@ -11,9 +12,7 @@ if [ -e "$file" ]; then
 	fi 
 
 	if [ -f "$file" ]; then
-		echo "school file exists"
-	else
-		echo "school is not a regular file"
+		echo "school is a regular file"
 	fi
 else
 	echo "school file does not exist" 
