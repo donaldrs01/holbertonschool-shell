@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This uses printf and hh:mm format to display time. It is a nested while loop. 
+hour=0
+minute=1
+
+while [ $hour -le 12 ] 
+do
+	while [ $minute -le 59 ] 
+	do 
+		printf "%02d:%02d\n" $hour $minute
+		minute=$((minute + 1)) 
+	done 
+	minute=0
+	hour=$((hour +1))
+done
